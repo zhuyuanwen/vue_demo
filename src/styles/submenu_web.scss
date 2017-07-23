@@ -1,0 +1,43 @@
+@import './mixin';
+
+.submenu-container{
+  background: #fff;
+  margin-top: 50px;
+  border-bottom: 1px solid #ddd;
+}
+
+.grid-content {
+  background: #fff;
+  border-radius: 0;
+  min-height: 50px;
+  @include font(14px,50px);
+}
+
+.grid-menu {
+  @include sc(14px, #777);
+  text-align: center;
+  height: 47px;
+  a {
+    color: inherit;
+  }
+}
+
+.grid-menu:hover {
+  color: #32a8d9;
+}
+
+.search-form {
+  background-color: #fff;
+  .input_container {
+    display: flex;
+    justify-content: space-between;
+    input {
+      @include sc(14px, #777);
+      width: 100%;
+      padding-left: 40%;
+    }
+    i {
+      color: #777;
+    }
+  }
+}

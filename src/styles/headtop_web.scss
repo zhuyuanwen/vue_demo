@@ -1,0 +1,46 @@
+@import './mixin';
+@import 'variables';
+
+#head_top {
+  background-color: $green;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  @include wh(100%, 50px);
+}
+
+.head_goback {
+  left: 0.4rem;
+  @include wh(0.6rem, 0.8rem);
+  line-height: 50px;
+  margin-left: .4rem;
+  i {
+    color: #fff;
+  }
+}
+
+.head_login {
+  right: 0.55rem;
+  @include sc(14px, #fff);
+  @include ct;
+  cursor: pointer;
+  .login_span {
+    color: #fff;
+  }
+  .user_avatar {
+    fill: #fff;
+    @include wh(.8rem, .8rem);
+  }
+}
+
+.title_head {
+  @include center;
+  width: 50%;
+  color: #fff;
+  text-align: center;
+  .title_text {
+    @include sc(14px, #fff);
+    text-align: center;
+  }
+}
